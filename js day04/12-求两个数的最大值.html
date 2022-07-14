@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = +prompt('请输入第一个数')
+        let num2 = +prompt('请输入第二个数')
+        function getMax(x, y) {
+            // return 可以写多个， 但是必须是只能执行一个
+            if (x > y) {
+                return x
+            } else {
+                return y
+            }
+        }
+        let max = getMax(num1, num2)
+        document.write(max)
+    </script>
+</body>
+</html>

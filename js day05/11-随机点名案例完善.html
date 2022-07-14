@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // 随机数
+         function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+        // 声明一个数组
+        let arr = ['赵云', '黄忠', '关羽', '张飞', '马超', '刘备', '韩信']
+        
+        // 生成一个随机数
+        let random = getRandom(0, arr.length - 1)
+
+        document.write(arr[random]) 
+
+        // 打印完毕之后，删除名字
+        // arr.splice(从哪里开始删，删几个)
+        arr.splice(random, 1)
+    </script>
+</body>
+</html>

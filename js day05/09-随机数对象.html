@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 生成N-M之间的随机数
+        // Math.floor(Math.random() * (M - N + 1)) + N
+        // let re = Math.floor(Math.random() * (3 - 1 + 1)) + 1
+        // console.log(re)
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+        let random = getRandom(1, 10)
+        console.log(random)
+        let random1 = getRandom(1, 50)
+        console.log(random1)
+    </script>
+</body>
+</html>

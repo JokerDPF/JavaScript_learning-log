@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            uname: '小明',
+            age: 18
+        }
+        console.log(obj.age)
+        // 修改 对象.属性 = 新值
+        obj.age = 81
+        console.log(obj)
+        // 新增一个属性  js 可以非常方便的新增属性或方法
+        obj.sex = '男'
+        console.log(obj)
+        obj.sing = function () {
+            console.log('hi')
+        }
+        obj.sing()
+
+        // 删除
+        delete obj.uname
+        console.log(obj)
+    </script>
+</body>
+</html>

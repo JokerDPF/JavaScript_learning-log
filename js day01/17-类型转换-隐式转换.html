@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num = prompt('请输入一个数字')
+        // console.log(num, typeof num)
+
+        // + ：内部悄悄地把18数字转换成字符串18
+        console.log('pink老师' + 18)
+
+        console.log(10 + '10') // 1010
+        // - * / ：会把字符串的10转化为数字型的10
+        console.log(10 - '10') // 0
+
+        // 小技巧:+号作为正好使用时会默认把字符串转换成数字类型
+        let num = '10'
+        console.log(+num)
+        console.log(-num)
+
+        console.log(10 +  +'10') // 20
+
+    </script>
+</body>
+</html>

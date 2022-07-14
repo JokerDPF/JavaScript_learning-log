@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.不断弹出对话款
+        // 2、除非输入的是4，退出循环
+        // 3.事先准备金额变量
+        let money = 100
+        while (true) {
+            let str = prompt(`
+            请选择操作：
+                1.存钱
+                2.取钱
+                3.查看余额
+                4.退出
+            `)
+            if (str === '4' ) {
+                break
+            }
+            // switch 进行加减操作
+            switch (str) {
+                case '1':
+                    let cun = +prompt('请你输入存钱的金额')
+                    money = money + cun
+                    break
+                case '2':
+                    let qu = +prompt('请输入你要取出的金额')
+                    money = money - qu
+                    break
+                case '3':
+                    alert(`您卡上的余额是：${money}`)
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

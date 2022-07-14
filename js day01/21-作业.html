@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            margin: 0 auto;
+            text-align: center;
+            border-collapse: collapse;
+            border: 1px solid #000;
+        }
+        table th,
+        td{
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        table caption{
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        let balance1 = +prompt('请输入你的银行卡余额')
+        let waterrate = +prompt('请输入水费')
+        let networkfee = +prompt('请输入网费')
+        let electricity = +prompt('请输入电费')
+        let balance2 = balance1 - waterrate - networkfee - electricity
+
+        document.write(`
+        <table>
+        <caption>
+            <h2>账单</h2>
+        </caption>
+        <tr>
+            <th>银行卡余额</th>
+            <th>水费</th>
+            <th>网费</th>
+            <th>电费</th>
+            <th>银行卡余额</th>
+        </tr>
+        <tr>
+            <td>${balance1}元</td>
+            <td>${waterrate}元</td>
+            <td>${networkfee}元</td>
+            <td>${electricity}元</td>
+            <td>${balance2}元</td>
+        </tr>
+    </table>
+        `)
+    </script>
+</body>
+</html>

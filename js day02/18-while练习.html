@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 1.输出 1- 100个数字
+        // let i = 1
+        // while (i <= 100) {
+        //     document.write(`是:${i} <br>`)
+        //     i++
+        // }
+
+        // // 2.1-100的累加和
+        // let i = 1
+        // let sum = 0
+        // while (i  <= 100) {
+        //     // sum = sum + i
+        //     sum += i
+        //     i++
+        // }
+        // console.log(sum)
+
+        // 3.计算1-100之间所以偶数和
+        let i = 1
+        let sum = 0
+        while (i <= 100) {
+            if (i % 2 ===0){
+                // 此时的i 一定是偶数
+                sum  += i
+            }
+            // i++ 必须要放到if的外面
+            // 不管i是偶数还是奇数，i++都要执行
+            i++
+        }
+        console.log(sum)
+    </script>
+</body>
+</html>

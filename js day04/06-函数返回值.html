@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function sum() {
+        //     return 20
+        // }
+        // let num = document.write(sum())
+        // 如果函数名字很长
+        // function getMyResult() {
+        //     return 20
+        // }
+        // document.write(getMyResult())
+        // let re = getMyResult()
+        // document.write(re)
+
+        // 求和函数有返回值 这个函数就只是求和 把结果返回给我们就行了，
+        // 不需要打印输出
+        function getSum(x, y) {
+            x = x || 0
+            y = y || 0
+            // 先计算 x + y，然后再返回值
+            return x + y
+        }
+        let sum = getSum(1,2)
+        document.write(sum)
+    </script>
+</body>
+</html>

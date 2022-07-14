@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 比较结果为布尔类型，只有true和 false
+        console.log(3 > 5) // false
+        console.log(5 >= 5) // true
+        
+        // console.log(5 = 5) 一个等号是赋值号
+        
+        console.log(5 == 5) // ture
+        
+        // 只要值一样 就是false 不管数据类型
+        console.log(5 == '5') // ture
+
+        // === 以后判断要用=== 开发常用  要求值和类型都一样
+        console.log(5 === 5) // true
+        console.log(5 === '5') // false
+        
+        // 特殊情况
+        console.log('pink' > 'red') // false 比较ASCII码,从左到右依次比较
+        console.log(1 === NaN) // false NaN不等于任何值
+        console.log(0.1 + 0.2 === 0.3) // false 不要比较小数，因为精度问题
+        
+
+
+        console.log(3 > '2') // true 把'2'转化成数字类型
+    </script>
+</body>
+</html>
